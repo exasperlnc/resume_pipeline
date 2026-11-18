@@ -4,7 +4,7 @@ A personal system of workflows and one agent that systematizes a software job se
 
 ## Status
 
-Design is done, `schema.sql` is written and tested. Stage 1 ingest works for Greenhouse (`src/ingest/`, tests in `test/`). **Next: Lever and Ashby adapters**, each as an `AtsAdapter` registered in `src/ingest/run.ts`, with fixtures in `test/fixtures/<ats>/`.
+Design is done, `schema.sql` is written and tested. Stage 1 ingest is done for Greenhouse, Lever and Ashby (`src/ingest/`, one `AtsAdapter` per ATS registered in `src/ingest/run.ts`; fixtures in `test/fixtures/<ats>/`, lifecycle tests in `test/ingest.test.ts` run against every ATS). Lever EU boards use a `board_token` of `eu:<site>`. **Next: stage 2 (extract).**
 
 Commands: `npm run seed -- companies.csv`, `npm run ingest`, `npm test`, `npm run typecheck`. The database path defaults to `jobs.db`; override it with `JOBS_DB`.
 

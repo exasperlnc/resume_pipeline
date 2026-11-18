@@ -1,0 +1,97 @@
+[
+  {
+    "additionalPlain": "",
+    "additional": "<p>Apply&nbsp;<a href=\"https://acme.example/apply\">here</a>.</p>",
+    "categories": {
+      "commitment": "Full-time",
+      "location": "Seattle, WA",
+      "team": "Engineering",
+      "allLocations": [
+        "Seattle, WA",
+        "Remote, US"
+      ]
+    },
+    "createdAt": 1790000000000,
+    "descriptionPlain": "",
+    "description": "<div><p>Acme builds tools &amp; things.</p></div>",
+    "id": "0b6f2c1e-1111-4a5b-9c0d-000000000001",
+    "lists": [
+      {
+        "text": "What you'll do",
+        "content": "\n<li>Build <strong>TypeScript</strong> services</li><li>Own Postgres schemas</li>"
+      }
+    ],
+    "text": "Software Engineer, Platform",
+    "country": "US",
+    "workplaceType": "hybrid",
+    "opening": "<div><p>Acme builds tools &amp; things.</p></div>",
+    "openingPlain": "",
+    "descriptionBody": "",
+    "descriptionBodyPlain": "",
+    "hostedUrl": "https://jobs.lever.co/acme/0b6f2c1e-1111-4a5b-9c0d-000000000001",
+    "applyUrl": "https://jobs.lever.co/acme/0b6f2c1e-1111-4a5b-9c0d-000000000001/apply",
+    "salaryRange": {
+      "currency": "USD",
+      "interval": "per-year-salary",
+      "min": 140000,
+      "max": 180000
+    }
+  },
+  {
+    "additionalPlain": "",
+    "additional": "",
+    "categories": {
+      "commitment": "Full-time",
+      "location": "Remote, United States",
+      "team": "Engineering",
+      "allLocations": [
+        "Remote, United States"
+      ]
+    },
+    "createdAt": 1790100000000,
+    "descriptionPlain": "",
+    "description": "<p>Work with customers to deploy Acme.</p>",
+    "id": "0b6f2c1e-2222-4a5b-9c0d-000000000002",
+    "lists": [
+      {
+        "text": "Requirements",
+        "content": "\n<li>Python</li><li>Customer calls</li>"
+      }
+    ],
+    "text": "Forward Deployed Engineer",
+    "country": "US",
+    "workplaceType": "remote",
+    "opening": "<p>Work with customers to deploy Acme.</p>",
+    "openingPlain": "",
+    "descriptionBody": "",
+    "descriptionBodyPlain": "",
+    "hostedUrl": "https://jobs.lever.co/acme/0b6f2c1e-2222-4a5b-9c0d-000000000002",
+    "applyUrl": "https://jobs.lever.co/acme/0b6f2c1e-2222-4a5b-9c0d-000000000002/apply"
+  },
+  {
+    "additionalPlain": "",
+    "additional": "",
+    "categories": {
+      "commitment": "Full-time",
+      "location": "Austin, TX",
+      "team": "Engineering",
+      "allLocations": [
+        "Austin, TX"
+      ]
+    },
+    "createdAt": 1790200000000,
+    "descriptionPlain": "",
+    "description": "<p>Pre-sales technical partner to account executives.</p>",
+    "id": "0b6f2c1e-3333-4a5b-9c0d-000000000003",
+    "lists": [],
+    "text": "Solutions Engineer",
+    "country": "US",
+    "workplaceType": "unspecified",
+    "opening": "<p>Pre-sales technical partner to account executives.</p>",
+    "openingPlain": "",
+    "descriptionBody": "",
+    "descriptionBodyPlain": "",
+    "hostedUrl": "https://jobs.lever.co/acme/0b6f2c1e-3333-4a5b-9c0d-000000000003",
+    "applyUrl": "https://jobs.lever.co/acme/0b6f2c1e-3333-4a5b-9c0d-000000000003/apply"
+  }
+]

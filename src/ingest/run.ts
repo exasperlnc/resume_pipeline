@@ -1,11 +1,15 @@
 import { sqliteNow, type DB } from "../db.js";
+import { ashby } from "./ashby.js";
 import { greenhouse } from "./greenhouse.js";
+import { lever } from "./lever.js";
 import { createHttpClient, type HttpOptions } from "./http.js";
 import { syncPostings, type SyncResult } from "./store.js";
 import type { AtsAdapter } from "./types.js";
 
 export const ADAPTERS: Partial<Record<string, AtsAdapter>> = {
   greenhouse,
+  lever,
+  ashby,
 };
 
 export interface CompanyRunResult {
