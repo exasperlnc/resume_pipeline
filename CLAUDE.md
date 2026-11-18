@@ -4,7 +4,9 @@ A personal system of workflows and one agent that systematizes a software job se
 
 ## Status
 
-Design is done, `schema.sql` is written and tested. No application code exists yet. **First task: the ingest script (stage 1).**
+Design is done, `schema.sql` is written and tested. Stage 1 ingest works for Greenhouse (`src/ingest/`, tests in `test/`). **Next: Lever and Ashby adapters**, each as an `AtsAdapter` registered in `src/ingest/run.ts`, with fixtures in `test/fixtures/<ats>/`.
+
+Commands: `npm run seed -- companies.csv`, `npm run ingest`, `npm test`, `npm run typecheck`. The database path defaults to `jobs.db`; override it with `JOBS_DB`.
 
 ## Architecture
 

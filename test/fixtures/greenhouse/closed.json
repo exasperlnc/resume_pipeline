@@ -1,0 +1,95 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/4001",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 13001,
+      "location": {
+        "name": "Seattle, WA"
+      },
+      "metadata": null,
+      "id": 4001,
+      "updated_at": "2026-11-01T12:00:00-05:00",
+      "requisition_id": "R4001",
+      "title": "Software Engineer, Platform",
+      "company_name": "Acme",
+      "first_published": "2026-10-01T09:00:00-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Acme builds tools &amp;amp; things.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;What you&amp;#39;ll do&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Build &lt;strong&gt;TypeScript&lt;/strong&gt; services&lt;/li&gt;&lt;li&gt;Own Postgres schemas&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Apply&amp;nbsp;&lt;a href=&quot;https://acme.example/apply&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 1,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 2,
+          "name": "Seattle",
+          "location": "Seattle, WA",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/4002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 13002,
+      "location": {
+        "name": "Remote, United States"
+      },
+      "metadata": null,
+      "id": 4002,
+      "updated_at": "2026-11-01T12:00:00-05:00",
+      "requisition_id": "R4002",
+      "title": "Forward Deployed Engineer",
+      "company_name": "Acme",
+      "first_published": "2026-10-01T09:00:00-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;Work with customers to deploy Acme.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Python&lt;/li&gt;&lt;li&gt;Customer calls&lt;/li&gt;&lt;/ul&gt;",
+      "departments": [
+        {
+          "id": 1,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 2,
+          "name": "Seattle",
+          "location": "Seattle, WA",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "total": 2
+  }
+}

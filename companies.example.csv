@@ -1,0 +1,5 @@
+# One row per company. ats: greenhouse | lever | ashby | other.
+# board_token is the slug in the board URL, e.g. boards.greenhouse.io/<token>.
+# watch: 1 to poll (default), 0 to keep the company but stop polling.
+name,ats,board_token,website,industry,watch
+GitLab,greenhouse,gitlab,https://about.gitlab.com,devtools,1
