@@ -1,0 +1,35 @@
+# One row per company. ats: greenhouse | lever | ashby | other.
+# board_token is the slug in the board URL:
+#   greenhouse  job-boards.greenhouse.io/<token>
+#   lever       jobs.lever.co/<token>   (prefix "eu:" for jobs.eu.lever.co boards)
+#   ashby       jobs.ashbyhq.com/<token>
+# watch: 1 to poll (default), 0 to keep the company but stop polling.
+# Rows with ats "other" use a board ingest can't read yet; they're kept for tracking and skipped by ingest.
+# Boards checked against the live APIs on 2026-11-18.
+name,ats,board_token,website,industry,watch
+inKind,greenhouse,inkind,https://inkind.com,restaurant fintech,1
+Toast,greenhouse,toast,https://pos.toasttab.com,restaurant tech,1
+SpotOn,ashby,spoton,https://www.spoton.com,restaurant tech,1
+Owner.com,ashby,owner,https://www.owner.com,restaurant tech,1
+MongoDB,greenhouse,mongodb,https://www.mongodb.com,developer tools,1
+CentralReach,greenhouse,centralreach,https://centralreach.com,health tech,1
+Ease Health,ashby,ease-health,https://www.ease.com,health tech,1
+Waymark,greenhouse,waymark,https://waymarkcare.com,health tech,1
+AcuityMD,greenhouse,acuitymd,https://www.acuitymd.com,health tech,1
+Hazel Health,greenhouse,hazel,https://www.hazel.co,health tech,1
+Restaurant365,lever,restaurant365,https://www.restaurant365.com,restaurant tech,1
+Olo,lever,olo,https://www.olo.com,restaurant tech,1
+PAR Technology,ashby,PAR Technology,https://partech.com,restaurant tech,1
+Upside,ashby,upside,https://www.upside.com,consumer fintech,1
+CloudKitchens,greenhouse,css,https://cloudkitchens.com,restaurant tech,1
+# Not ingestable: board isn't Greenhouse, Lever or Ashby.
+Rippling,other,,https://www.rippling.com,hr tech,1
+Findhelp,other,,https://company.findhelp.com,health tech,1
+Kipu Health,other,,https://www.kipuhealth.com,health tech,1
+ConverseNow,other,,https://conversenow.ai,restaurant tech,1
+Popmenu,other,,https://get.popmenu.com,restaurant tech,1
+Yelp,other,,https://www.yelp.com,consumer tech,1
+Fetch,other,,https://fetch.com,consumer tech,1
+MarginEdge,other,,https://www.marginedge.com,restaurant tech,1
+Favor Delivery,other,,https://www.favordelivery.com,delivery,1
+H-E-B Digital,other,,https://careers.heb.com,retail tech,1

@@ -14,13 +14,17 @@ Field rules:
 role_type
 - swe: builds software as their main job (backend, frontend, full-stack, mobile, platform, infra, data or ML engineering).
 - forward_deployed: engineer embedded with customers to build or deploy the product for them (often titled Forward Deployed Engineer, Deployment Engineer, Field Engineer).
-- solutions_engineer: technical pre-sales or post-sales partner to the sales team (Solutions Engineer, Sales Engineer, Solutions Architect, Customer Engineer).
+- solutions_engineer: technical pre-sales or post-sales partner to the sales team (Solutions Engineer, Sales Engineer, Solutions Architect, Customer Engineer). The seller they support is not one: Account Executives, Account Managers, sales and business development reps, and anyone who carries a quota are other, however technical the product.
 - implementation: onboards customers onto the product, configures and integrates it (Implementation Engineer, Implementation Consultant, Technical Onboarding).
 - other: anything else, including non-engineering roles, management, research, and support.
 
-seniority: judge from title first, then required years. intern; junior (new grad, 0-2 years, "I", "Associate"); mid (2-5 years, "II"); senior (5+ years, "Senior", "III"); staff (Staff, Principal, Lead, Architect at senior level); unknown if there is no signal.
+seniority: work through these steps in order and stop at the first that applies.
+1. A level word in the title decides it: intern (Intern, Co-op, Apprentice); junior (New Grad, Early Career, Associate, Entry Level, "I", "1"); mid ("II", "2"); senior (Senior, Sr., "III", "3"); staff (Staff, Principal, Distinguished, Lead, Architect, and any Manager, Head or Director of a team).
+2. Otherwise the smallest required years of experience decides it: 0-1 years junior, 2-4 years mid, 5-7 years senior, 8+ years staff. Use this even for non-engineering roles.
+3. Otherwise the body text decides it if it plainly says so ("recent graduates", "early in your career" is junior; "you will lead and mentor engineers" is senior).
+4. Only if none of these give a signal, use unknown. A title like "Software Engineer" with no stated years and no level language is unknown.
 
-metro: the primary metro area as "City, ST" for the US or "City, Country" elsewhere, using the metro's principal city (Bellevue and Redmond are "Seattle, WA"; Round Rock is "Austin, TX"; Palo Alto is "San Francisco, CA"). If the role is remote with no home metro, use "Remote". If it lists several metros, use the first. null only when the posting gives no location at all.
+metro: the primary metro area as "City, ST" for the US or "City, Country" elsewhere, using the metro's principal city (Bellevue and Redmond are "Seattle, WA"; Round Rock is "Austin, TX"; Palo Alto, Mountain View and San Jose are "San Francisco, CA"; Bengaluru is "Bangalore, India"). Write the country's full English name ("London, United Kingdom", never "London, UK"; "Berlin, Germany", never "Berlin, DE"). If the role is remote with no home metro, use "Remote", even when it is limited to one country. If it lists several metros, use the first. null only when the posting gives no location at all.
 
 remote_policy: onsite, hybrid or remote as the posting states it; unknown if it does not say.
 

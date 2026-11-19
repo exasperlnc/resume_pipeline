@@ -4,7 +4,7 @@ import type { DB } from "../src/db.js";
 import { createClaudeExtractor, DEFAULT_EXTRACT_MODEL } from "../src/extract/claude.js";
 import { SYSTEM_PROMPT } from "../src/extract/prompt.js";
 import { runExtract } from "../src/extract/run.js";
-import { ExtractError, sanitizeExtract, type ExtractInput, type ExtractOutput, type Extractor } from "../src/extract/schema.js";
+import { ExtractError, normalizeMetro, sanitizeExtract, type ExtractInput, type ExtractOutput, type Extractor } from "../src/extract/schema.js";
 import { createSkillResolver, seedSkills, skillKey } from "../src/extract/skills.js";
 import { ingestAll } from "../src/ingest/run.js";
 import { addCompany, fakeFetch, fixture, memoryDb, noSleep } from "./helpers.js";
@@ -114,6 +114,22 @@ describe("skills", () => {
     const id = resolve("Temporal", "framework");
     expect(resolve("temporal", null)).toBe(id);
     expect(db.prepare("SELECT name, category FROM skills WHERE id = ?").get(id)).toEqual({ name: "Temporal", category: "framework" });
+  });
+});
+
+describe("normalizeMetro", () => {
+  it("spells out country codes but leaves US states alone", () => {
+    expect(normalizeMetro("London, UK")).toBe("London, United Kingdom");
+    expect(normalizeMetro("Wilmington, DE")).toBe("Wilmington, DE");
+    expect(normalizeMetro("Indianapolis, IN")).toBe("Indianapolis, IN");
+    expect(normalizeMetro("Tokyo, JP")).toBe("Tokyo, Japan");
+  });
+  it("folds suburbs and remote variants into one metro", () => {
+    expect(normalizeMetro("Palo Alto, CA")).toBe("San Francisco, CA");
+    expect(normalizeMetro("Bengaluru, India")).toBe("Bangalore, India");
+    expect(normalizeMetro("New York City, NY")).toBe("New York, NY");
+    expect(normalizeMetro("Remote, France")).toBe("Remote");
+    expect(normalizeMetro("  ")).toBeNull();
   });
 });
 
