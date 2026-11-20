@@ -5,6 +5,8 @@ export const ROLE_TYPES = ["swe", "forward_deployed", "solutions_engineer", "imp
 export const SENIORITIES = ["intern", "junior", "mid", "senior", "staff", "unknown"] as const;
 export const REMOTE_POLICIES = ["onsite", "hybrid", "remote", "unknown"] as const;
 export const SKILL_CATEGORIES = ["language", "framework", "database", "cloud", "practice", "soft"] as const;
+export type RoleType = (typeof ROLE_TYPES)[number];
+export type Seniority = (typeof SENIORITIES)[number];
 
 export const ExtractedSkill = z.object({
   name: z.string().describe("Skill name, using the vocabulary's canonical spelling when one fits"),

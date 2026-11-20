@@ -6,9 +6,11 @@ A personal system of workflows and one agent that systematizes a software job se
 
 Design is done, `schema.sql` is written and tested. Stage 1 ingest is done for Greenhouse, Lever and Ashby (`src/ingest/`, one `AtsAdapter` per ATS registered in `src/ingest/run.ts`; fixtures in `test/fixtures/<ats>/`, lifecycle tests in `test/ingest.test.ts` run against every ATS). Lever EU boards use a `board_token` of `eu:<site>`.
 
-Stage 2 extract is built (`src/extract/`): one structured-output call per row of `extract_queue`, defaulting to `claude-haiku-5-5` at low effort (override with `EXTRACT_MODEL`). Skill names resolve through `skill_aliases`, which is seeded from `src/extract/vocabulary.ts`; that vocabulary is also part of the cached system prompt, so append to it rather than reorder it. **Next: stage 7 (market intelligence).**
+Stage 2 extract is built (`src/extract/`): one structured-output call per row of `extract_queue`, defaulting to `claude-haiku-5-5` at low effort (override with `EXTRACT_MODEL`). Skill names resolve through `skill_aliases`, which is seeded from `src/extract/vocabulary.ts`; that vocabulary is also part of the cached system prompt, so append to it rather than reorder it.
 
-Commands: `npm run seed -- companies.csv`, `npm run ingest`, `npm run extract -- [--limit N] [--concurrency N]`, `npm test`, `npm run typecheck`. Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` for extract. The database path defaults to `jobs.db`; override it with `JOBS_DB`.
+Stage 7 market report is built (`src/market/`). `buildMarketData` turns the database into a pre-computed JSON snapshot (only `watch = 1` companies; a posting counts for every target location its `location_raw` lists, via `locationBuckets`), then one `claude-opus-5-5` call (override with `REPORT_MODEL`) writes the report, and `checkReportNumbers` flags any figure in the prose that isn't in the snapshot. Targets live in `src/market/targets.ts`. Reports go to `reports/` (gitignored). **Next: stage 3 (score and triage).**
+
+Commands: `npm run seed -- companies.csv`, `npm run ingest`, `npm run extract -- [--limit N] [--concurrency N]`, `npm run report -- [--data-only] [--out DIR]`, `npm test`, `npm run typecheck`. Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` for extract. The database path defaults to `jobs.db`; override it with `JOBS_DB`.
 
 ## Architecture
 
