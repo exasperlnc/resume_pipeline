@@ -7,10 +7,12 @@
     "db:init": "tsx src/cli/init-db.ts",
     "seed": "tsx src/cli/seed.ts",
     "ingest": "tsx src/cli/ingest.ts",
+    "extract": "tsx src/cli/extract.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
     "better-sqlite3": "^13.2.0",
     "csv-parse": "^7.0.3",
     "he": "^2.0.0",
