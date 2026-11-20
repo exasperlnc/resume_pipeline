@@ -8,6 +8,7 @@
     "seed": "tsx src/cli/seed.ts",
     "ingest": "tsx src/cli/ingest.ts",
     "extract": "tsx src/cli/extract.ts",
+    "report": "tsx src/cli/report.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
